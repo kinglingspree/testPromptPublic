@@ -1,6 +1,8 @@
 **WooCommerce PayPal Express Checkout Payment Gateway**（官方早期插件）\
 这个插件在 **版本 4.0 之前** 主要依赖 PayPal NVP API 处理支付请求
 
+本次安装以WooCommerce 3.5为例
+
 要安装兼容 **WooCommerce 3.5** 的 WordPress 版本，需选择 **WordPress 5.0 至 5.2 之间的版本**（具体为 **5.0.x 至 5.2.x**）
 
 *   **WordPress 5.0 至 5.2** 是 WooCommerce 3.5 发布时（2018 年）的主流版本，二者核心代码库高度匹配，兼容性风险最低。
