@@ -39,4 +39,4 @@
 4.  进入woocommence 界面，点击settings，选择Payments 选项卡，paypal checkout 选择enable ，点击manager，配置相关比如 env 选择sandbox，设置相关账号密码签名
 5.  左侧 Products 增加商品 
 
-6.http\://localhost/wordpress/shop/ 访问购物地址 购买商品
+6. 鼠标放在左上角房子图标，点击visit shop或者直接访问 http\://localhost/wordpress/shop/ 访问购物地址 购买商品
