@@ -45,13 +45,50 @@
   
 5. **打包**
    ```
-   # 进入项目所在目录
-   cd /path/to/woocommerce-gateway-paypal-express-checkout
+ # 进入插件目录
+cd /Users/glen/Documents/workspace/paypal/woocommerce-gateway-paypal-express-checkout
 
-   # 返回到上一级目录（保证 zip 里面不多包一层文件夹）
-   cd ..
+# 取版本号（来自 readme.txt 的 Stable tag）
+VERSION=$(grep "^Stable tag:" readme.txt | awk '{print $3}')
 
-   # 使用 zip 命令打包（Mac/Linux）
-   zip -r woocommerce-gateway-paypal-express-checkout.zip woocommerce-gateway-paypal-express-checkout -x "*.git*" "*/.DS_Store" "*.md" "*.zip"
+# 目标目录
+DEST="/Users/glen/Documents/workspace/paypal/releases/woocommerce-gateway-paypal-express-checkout-$VERSION"
+
+# 准备干净的发布目录
+rm -rf "$DEST"
+mkdir -p "$DEST"
+
+# 只同步需要发布的文件/目录，排除开发文件
+rsync -a \
+  --exclude "/wordpress_org_assets/***" \
+  --exclude "/.git/***" \
+  --exclude "/.github/***" \
+  --exclude "/node_modules/***" \
+  --exclude "/vendor/***" \
+  --exclude "/tests/***" \
+  --exclude "/.DS_Store" \
+  --exclude "/deploy.sh" \
+  --exclude "/composer.*" \
+  --exclude "/package*.json" \
+  --exclude "/phpcs.xml" \
+  --exclude "/phpunit.xml" \
+  --exclude "/README.md" \
+  --exclude "/.gitattributes" \
+  --exclude "/.editorconfig" \
+  --exclude "/.gitignore" \
+  --include "/assets/***" \
+  --include "/includes/***" \
+  --include "/languages/***" \
+  --include "/templates/***" \
+  --include "/changelog.txt" \
+  --include "/DEVELOPER.md" \
+  --include "/readme.txt" \
+  --include "/woocommerce-gateway-paypal-express-checkout.php" \
+  --exclude "/**" \
+  "./" "$DEST/"
+
+# 打包为与官方一致的 zip（解压后顶层目录带版本号）
+cd /Users/glen/Documents/workspace/paypal/releases
+zip -r "woocommerce-gateway-paypal-express-checkout-$VERSION.zip" "woocommerce-gateway-paypal-express-checkout-$VERSION" -x "*/.DS_Store"
       
    ```
