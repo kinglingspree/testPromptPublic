@@ -28,10 +28,9 @@
     *   &#x20;    cp -r /Users/glen/Downloads/wordpress /Applications/MAMP/htdocs/
     *   &#x20;     cd /Applications/MAMP/htdocs/wordpress 
     *         修改 wp-config-sample.php中的相关配置
-        *   `define( 'DB_NAME', 'wordpress' );`\
-            `/** MySQL database username */`
-        *   `define( 'DB_USER', 'root' );````/** MySQL database password *`
-        *   `/define( 'DB_PASSWORD', 'root' );````/** MySQL hostname */`
+        *   `define( 'DB_NAME', 'wordpress' );`
+        *   `define( 'DB_USER', 'root' );`
+        *   `/define( 'DB_PASSWORD', 'root' );`
         *   `define( 'DB_HOST', 'localhost:8889' );`
     *   访问 <http://localhost/wordpress/wp-admin/setup-config.php>
     *   根据引导步骤完成安装
