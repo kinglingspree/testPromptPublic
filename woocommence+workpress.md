@@ -35,7 +35,7 @@
     *   根据引导步骤完成安装
     *   如果遇到错误 可以查看/Applications/MAMP/logs 下的错误日志
 2.  下载 <https://github.com/woocommerce/woocommerce-gateway-paypal-express-checkout/releases/tag/2.1.3>  ，需要下载zip包
-3.  在http\://localhost/wordpress/wp-admin/admin.php 在admin 界面 选择plugins，upload 上传上面下载的zip 包，然后intall，
+3.  在http\://localhost/wordpress/wp-admin/admin.php 在admin 界面 选择plugins，upload 上传上面下载的zip 包，然后intall active，
 4.  进入woocommence 界面，点击settings，选择Payments 选项卡，paypal checkout 选择enable ，点击manager，配置相关比如 env 选择sandbox，设置相关账号密码签名
 5.  左侧 Products 增加商品 
 
