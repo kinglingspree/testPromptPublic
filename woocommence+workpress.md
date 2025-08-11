@@ -13,7 +13,7 @@
     *   安装并启动 MAMP，确保 **Apache** 和 **MySQL** 服务器正常运行。
     *   **配置端口**（可选）：
 
-        *   进入 MAMP 偏好设置 → **Ports**，将 Apache 端口改为 **80**（需输入管理员密码），后续可直接通过 `http://localhost` 访问。
+        *   进入 MAMP 偏好设置 → **Ports**，将 Apache 端口改为 **80**，后续可直接通过 `http://localhost` 访问。
 2.  **创建数据库**
 
     *   访问 <http://localhost/MAMP/> 点击页面的Mysql 点击 phpMyAdmin 或者直接访问 <http://localhost/phpMyAdmin5/>
