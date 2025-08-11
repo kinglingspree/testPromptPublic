@@ -42,3 +42,16 @@
       * 点击Woocommence菜单，点击Settings，选择Payments 选项卡，paypal checkout 选择enable ，然后点击 manager，Environment选择sandbox，Sandbox API Credentials 选择点击click here to toggle manual API           credential input，然后 设置相关账号密码签名
       * 左侧 Products 增加商品 
       * 鼠标放在左上角房子图标，点击visit shop或者直接访问 <http://localhost/wordpress/shop/> 访问购物地址 购买商品
+  
+5. **打包**
+   ```
+   # 进入项目所在目录
+   cd /path/to/woocommerce-gateway-paypal-express-checkout
+
+   # 返回到上一级目录（保证 zip 里面不多包一层文件夹）
+   cd ..
+
+   # 使用 zip 命令打包（Mac/Linux）
+  zip -r woocommerce-gateway-paypal-express-checkout.zip woocommerce-gateway-paypal-express-checkout \
+      -x "*.git*" "*/.DS_Store" "*.md" "*.zip"
+   ```
