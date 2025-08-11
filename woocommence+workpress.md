@@ -52,6 +52,6 @@
    cd ..
 
    # 使用 zip 命令打包（Mac/Linux）
-  zip -r woocommerce-gateway-paypal-express-checkout.zip woocommerce-gateway-paypal-express-checkout \
-      -x "*.git*" "*/.DS_Store" "*.md" "*.zip"
+   zip -r woocommerce-gateway-paypal-express-checkout.zip woocommerce-gateway-paypal-express-checkout -x "*.git*" "*/.DS_Store" "*.md" "*.zip"
+      
    ```
