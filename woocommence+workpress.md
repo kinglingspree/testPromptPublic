@@ -19,9 +19,9 @@
     *   访问 <http://localhost/MAMP/> 点击页面的Mysql 点击 phpMyAdmin 或者直接访问 <http://localhost/phpMyAdmin5/>
     *   在 phpMyAdmin 中创建数据库，例如命名为 `wordpress`，字符集选择 **utf8mb4\_*****unicode***\*\*\_ci\*\*。
 
-### 二、安装 WordPress 5.0+
 
-1.  **下载 WordPress**
+
+3.  **下载安装 WordPress**
 
     *   访问 [WordPress 官网](https://wordpress.org/)，下载 wordpress（需兼容 WooCommerce 3.5,比如5.2）。
     *   解压后将 `wordpress` 文件夹复制到 MAMP 的 `htdocs` 目录（路径：`/Applications/MAMP/htdocs/`）
@@ -36,9 +36,9 @@
     *   访问 http\://localhost/wordpress/wp-admin/setup-config.php
     *   根据引导步骤完成安装
     *   如果遇到错误 可以查看/Applications/MAMP/logs 下的错误日志
-2.  下载 <https://github.com/woocommerce/woocommerce-gateway-paypal-express-checkout/releases/tag/2.1.3>  ，需要下载zip包
-3.  在http\://localhost/wordpress/wp-admin/admin.php 在admin 界面 选择plugins，upload 上传上面下载的zip 包，然后intall active，
-4.  进入woocommence 界面，点击settings，选择Payments 选项卡，paypal checkout 选择enable ，点击manager，配置相关比如 env 选择sandbox，设置相关账号密码签名
-5.  左侧 Products 增加商品 
-
-6. 鼠标放在左上角房子图标，点击visit shop或者直接访问 http\://localhost/wordpress/shop/ 访问购物地址 购买商品
+4.  **安装 Express Checkout,woocommence自带只有standard**
+   *.  下载 <https://github.com/woocommerce/woocommerce-gateway-paypal-express-checkout/releases/tag/2.1.3>  ，需要下载zip包
+   *.  在http\://localhost/wordpress/wp-admin/admin.php 在admin 界面 选择plugins，upload 上传上面下载的zip 包，然后intall active，
+   *.  进入woocommence 界面，点击settings，选择Payments 选项卡，paypal checkout 选择enable ，点击manager，配置相关比如 env 选择sandbox，设置相关账号密码签名
+   *.  左侧 Products 增加商品 
+   *. 鼠标放在左上角房子图标，点击visit shop或者直接访问 http\://localhost/wordpress/shop/ 访问购物地址 购买商品
