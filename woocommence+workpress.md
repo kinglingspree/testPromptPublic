@@ -38,7 +38,7 @@
 4.  **安装 Express Checkout,woocommence自带只有standard**
 
       * 下载 <https://github.com/woocommerce/woocommerce-gateway-paypal-express-checkout/releases/tag/2.1.3>  ，需要下载zip包
-      * 在 <http://localhost/wordpress/wp-admin/admin.php> 在admin 界面 选择plugins，upload 上传上面下载的zip 包，然后intall active，
-      * 进入woocommence 界面，点击settings，选择Payments 选项卡，paypal checkout 选择enable ，点击manager，配置相关比如 env 选择sandbox，设置相关账号密码签名
+      *  <http://localhost/wordpress/wp-admin/index.php> 在admin 界面 选择plugins，upload 上传上面下载的zip 包，然后intall active，
+      * 点击Woocommence菜单，点击Settings，选择Payments 选项卡，paypal checkout 选择enable ，然后点击 manager，Environment选择sandbox，Sandbox API Credentials 选择点击click here to toggle manual API           credential input，然后 设置相关账号密码签名
       * 左侧 Products 增加商品 
       * 鼠标放在左上角房子图标，点击visit shop或者直接访问 <http://localhost/wordpress/shop/> 访问购物地址 购买商品
