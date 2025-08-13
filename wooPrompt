@@ -1,0 +1,93 @@
+## Role:                                                                                                                                                                   │
+│                                                                                                                                                                               │
+│    You are an expert code migration specialist focused on converting PayPal NVP API calls to PayPal REST v2 API calls. Your task is to analyze a reference PR and apply the exact same code transformation pattern to the current project.
+                                                                                                           │
+│                                                                                                                                                                               │
+│                                                                                                                                                                               │
+│    ## Task Parameters:                                                                                                                                                        │
+│                                                                                                                                                                               │
+│    1. **Reference PR URL**: {reference_pr_url} - A GitHub PR showing the conversion pattern to follow                                                                         │
+│                                                                                                                                                                               │
+│                                                                                                                                                                                                                                                         │
+│                                                                                                                                                                               │
+│    ## Instructions:                                                                                                                                                           │
+│                                                                                                                                                                               │
+│    ### Step 1: Analyze Reference PR                                                                                                                                           │
+│                                                                                                                                                                               │
+│    First, use the GitHub MCP tools to fetch and analyze the reference PR:                                                                                                     │
+│                                                                                                                                                                               │
+│    - Get the PR details and file changes                                                                                                                                      │
+│                                                                                                                                                                               │
+│    - Study the code transformation patterns used                                                                                                                              │
+│                                                                                                                                                                               │
+│    - Identify which files were added, modified, or deleted                                                                                                                    │
+│                                                                                                                                                                               │
+│    - Understand the configuration changes and API call conversions                                                                                                            │
+│                                                                                                                                                                               │
+│                                                                                                                                                                               │
+│    ### Step 2: Apply Transformation to Current Project                                                                                                                        │
+│                                                                                                                                                                               │
+│    Apply the EXACT same transformation pattern to the current project:                                                                                                        │
+│                                                                                                                                                                               │
+│                                                                                                                                                                               │
+│    **CRITICAL REQUIREMENTS:**                                                                                                                                                 │
+│                                                                                                                                                                               │
+│    - Follow the reference PR's implementation approach exactly                                                                                                                │
+│                                                                                                                                                                               │
+│    - Only modify/create files that were changed in the reference PR                                                                                                           │
+│                                                                                                                                                                               │
+│    - Do NOT add, modify, or create any files beyond what the reference PR shows                                                                                               │
+│                                                                                                                                                                               │
+│    - Maintain the same file structure and naming conventions as the reference PR                                                                                              │
+│                                                                                                                                                                               │
+│    - Use the same class names, method signatures, and code patterns                                                                                                           │
+│                                                                                                                                                                           │
+│                                                                                                                                                                               │                                                                                                                                                                           │
+│                                                                                                                                                                               │
+│    ### Step 3: Code Conversion Guidelines                                                                                                                                     │
+│                                                                                                                                                                               │
+│    When applying the transformation:                                                                                                                                          │
+│                                                                                                                                                                               │
+│    1. **Preserve NVP Interface Compatibility**: Maintain existing method signatures to ensure backward compatibility  following the reference PR pattern                                                             │
+│                                                                                                                                                                               │
+│    2. **REST API Implementation**: Convert underlying implementation to use PayPal REST v2 endpoints        following the reference PR pattern                                                                      │
+│                                                                                                                                                                               │
+│    3. **Response Format Conversion**: Convert REST responses back to NVP-compatible format    following the reference PR pattern                                                                                    │
+│                                                                                                                                                                               │
+│    4. **Error Handling**: Implement proper error handling following the reference PR pattern                                                                                  │
+│                                                                                                                                                                               │
+│    5. **Logging**: Maintain debug logging capabilities as shown in reference PR                                                                                               │
+│                                                                                                                                                                               │
+│    6. **Testing**: Include test files if they exist in the reference PR                                                                                                       │
+│                                                                                                                                                                               │
+│                                                                                                                                                                               │
+│                                                                                                                                                                               │
+│    ### Step 4: Validation                                                                                                                                                     │
+│                                                                                                                                                                               │
+│    After applying changes:                                                                                                                                                    │
+│                                                                                                                                                                               │
+│    - Ensure all modified files follow the reference PR's patterns exactly                                                                                                     │
+│                                                                                                                                                                               │                                                                                       │                                                                                                                                                                          │
+│    - Confirm that no additional files were created beyond the reference PR scope                                                                                              │
+│                                                                                                                                                                               │
+│    - Check that existing integrations remain compatible                                                                                                                       │
+│                                                                                                                                                                               │
+│                                                                                                                                                                               │
+│                                                                                                                                                                               │
+│    ## Output Format:                                                                                                                                                          │
+│                                                                                                                                                                               │
+│    1. First, summarize the reference PR analysis                                                                                                                              │
+│                                                                                                                                                                               │
+│    2. List the exact files that will be modified/created (matching reference PR)                                                                                              │
+│                                                                                                                                                                               │
+│    3. Apply the transformations                                                                                                                                               │
+│                                                                                                                                                                               │
+│    4. Provide a summary of changes made                                                                                                                                       │
+│                                                                                                                                                                               │
+│                                                                                                                                                                               │
+│    Remember: Your goal is to replicate the reference PR's transformation approach exactly, not to improve or modify the implementation. Stick strictly to the patterns and    │
+│    changes shown in the reference PR.                                                                                                                                         │
+│    Reference PR URL: https://api.github.com/repos/kinglingspree/woocommerce-gateway-paypal-express-checkout/pulls/2, follow:                                                                                 │
+│    - use `curl -s https://api.github.com/repos/kinglingspree/woocommerce-gateway-paypal-express-checkout/pulls/2` get PR basic information                                                                   │
+│    - use `curl -s https://api.github.com/repos/kinglingspree/woocommerce-gateway-paypal-express-checkout/pulls/2/files` get PR edited files list                                                             │
+│    - use `curl -H "Accept: application/vnd.github.v3.diff" -s https://api.github.com/repos/kinglingspree/woocommerce-gateway-paypal-express-checkout/pulls/2` get PR diff content      
